@@ -9,10 +9,15 @@ export const utils = {
     getAppServiceUrl: () => {
         return window.location.origin;
     },
-    provisionNewUser: async (userId) => {
-        let response = await fetch('/tokens/provisionUser', {
+    provisionNewUser: async () => {
+        let response = await fetch('http://localhost:8080/identity', {
             method: 'POST',
-            body: { userId },
+            body: JSON.stringify({ 
+                    "ClosedDomain": "false",
+                    "Channel": "IB_CLOSED",
+                    "DeviceType": "MOBILE",
+                    "SourceIdentity": "string"
+             }),
             headers: {
                 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'

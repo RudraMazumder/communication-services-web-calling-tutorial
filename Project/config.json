@@ -1,5 +1,5 @@
 {
-    "connectionString": "REPLACE_WITH_CONNECTION_STRING"
+    "connectionString": "endpoint=https://acspoc01acs.communication.azure.com;accesskey=u4Op591HPHEWzaEyHb+YOS+AQfovlbTKt+cR05he6TnM0vXW6jAb8vwFtiX4y+n63iLYHT3j80pfj6NpNT2EkQ=="
 }
 
 
