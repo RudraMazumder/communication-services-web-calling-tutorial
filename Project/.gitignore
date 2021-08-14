@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-config.json
+
 # dependencies
 /node_modules
 /.pnp
@@ -26,3 +26,4 @@ yarn-error.log*
 # build dropped
 sdk.bundle.js
 ./config.js
+./config.json
