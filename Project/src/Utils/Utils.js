@@ -10,7 +10,7 @@ export const utils = {
         return window.location.origin;
     },
     provisionNewUser: async () => {
-        let response = await fetch('http://localhost:8080/identity', {
+        let response = await fetch('https://communication-token-service-poc.azurewebsites.net/identity', {
             method: 'POST',
             body: JSON.stringify({ 
                     "ClosedDomain": "false",
